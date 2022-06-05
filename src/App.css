@@ -1,10 +1,16 @@
 .App {
   text-align: center;
+  background-color: white;
 }
 
 .App-logo {
-  height: 40vmin;
+
   pointer-events: none;
+
+  background-position: top;
+  min-height: 100%;
+  width: 100vw;
+  position: relative;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,7 +19,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +41,83 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+
+#navigation {
+  height: 60px; 
+   width: 100%;
+  display: flex;
+  
+  /* align-items: center; */
+  /* position:static; */
+  /* padding: 0.5rem 0rem; */
+  /* background-Color: #282c34; */
+/* float: inline-end; */
+background-color: black;
+  /* color: transparent;
+  box-shadow: none;  */
+  /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
+} 
+#drawer {
+  /* height: 60px;  */
+   width: 10%;
+  display: flex;
+  
+  /* align-items: center; */
+  /* position:static; */
+  /* padding: 0.5rem 0rem; */
+  /* background-Color: #282c34; */
+/* float: inline-end; */
+background-color: rgba(0, 0, 0, alpha);
+  /* color: transparent;
+  box-shadow: none;  */
+  /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
+} 
+.nav-button:hover {
+    /* background: black;
+    visibility: collapse; */
+    transform: scale(1.1); 
+    /* opacity: 0.3; */
+    color: red;
+}
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: crimson;
+}
+/* .footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+} */
+.social-icon {
+	display: -webkit-inline-flex;
+	margin-bottom: 30px;
+  height: 50px;
+
+}
+ .social-item img {
+	filter: grayscale(1);
+  position: relative; height: 50px; width: 50px;
+  
+	transition: 0.3s ease filter;
+}
+.social-item:hover img {
+	filter: grayscale(0);
 }
